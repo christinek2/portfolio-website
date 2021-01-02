@@ -1,0 +1,96 @@
+/*
+Colors Used:
+Primary Color: (magenta) AB3E5B
+Secondary Color: (yellow) FFBE40
+Tertiary Colors: (light green) B3CC57, (light yellow) ECF081, (pink) EF746F
+*/
+
+body {
+  background-color: #fffff;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300 /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #4a4a4a;
+}
+
+/* HEADINGS */
+h1, h2, h3, h4 {
+  line-height: 1.2;
+}
+h1 {
+  font-size: 2.5em;
+  font-weight: 700
+}
+h2 {
+  font-size: 2em;
+  font-weight: 700
+}
+h3 {
+  font-size: 1.5em;
+  font-weight: 400
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400
+}
+
+/* IMAGE */
+img {
+  width: 100%;
+}
+
+/* HYPERLINKS */
+a {
+  color: #AB3E5B;
+  text-decoration: none; /* No underlining */
+}
+a:visited { /* visited link */
+  color: #AB3E5B;
+}
+a:hover,
+a:focus {
+  color: #EF746F; /* light pink */
+  text-decoration: underline; /* Underlining when hovering over link */
+}
+a:active { /* selected link */
+  color: #FFBE40; /* yellow */
+}
+
+/* BUTTONS */
+.button {
+  display: inline-block; /* since the <a> tag is inline by default */
+  background-color: #AB3E5B;
+  color: #ffffff; /* overide default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #EF746F; /* width of border, type, color */
+  transition: 0.2s opacity;
+}
+.button:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+.button:hover,
+.button:focus {
+  opacity: 0.8; /* reduce opacity of button */
+  text-decoration: none;
+  color: #ffffff
+}
+.button:active {
+  color: #FFBE40;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #AB3E5B;
+  text-transform: uppercase;
+  border: 2px solid #AB3E5B;
+  border-bottom: 2px solid #EF746F;
+}
+.button.contact:hover,
+.button.contact:focus {
+  background-color: #AB3E5B;
+  color: #ffffff
+}
