@@ -69,7 +69,7 @@ body {
 }
 
 main {
-  padding-top: 144px;
+  padding-top: 133px;
 }
 
 /* HEADINGS */
@@ -109,7 +109,6 @@ a:visited { /* visited link */
 a:hover,
 a:focus {
   color: #EF746F; /* light pink */
-  text-decoration: underline; /* Underlining when hovering over link */
 }
 a:active { /* selected link */
   color: #FFBE40; /* yellow */
@@ -158,12 +157,9 @@ a:active { /* selected link */
   padding: 0 15px;
 }
 
-.row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
-}
-
 #work .row {
   padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+  margin: 25px 0;
 }
 
 #hero {
@@ -171,10 +167,10 @@ a:active { /* selected link */
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+  text-align: center;
 }
-
-#hero h1 {
-  text-align: center; /* centers text */
+#hero span {
+  display: block;
 }
 
 .logo {
@@ -194,4 +190,110 @@ footer {
 }
 #social-buttons > ul > li {
   display: block;
+}
+
+/* BREAKPOINT */
+/* Medium devices (640px and larger) */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  main {
+    padding-top: 99px;
+  }
+  body {
+    font-size: 18px;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  #about h3 {
+    margin-top: 0;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 0 10px;
+  }
+}
+
+/* Large devices (1024px and larger) */
+@media only screen and (min-width: 1024px) {
+  .col-lg-5 {
+    width: 41.6%;
+  }
+  .col-lg-7 {
+    width: 58.3%;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 0 20px;
+  }
+  body {
+    font-size: 20px;
+  }
+}
+
+
+
+/* ANIMATION */
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px,48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+
+
+/* OVERLAY
+#overlay {
+    display: block;
+}
+
+.overlay {
+    position: relative;
+    display: inline-block;
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    color: white;
+    font-weight: bold;
 }
