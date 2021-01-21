@@ -73,6 +73,7 @@ nav > ul > li > a:active {
 header {
   background-color: #fff;
   position: fixed;
+  z-index: 1;
   width: 100%;
   padding: 10px 0 1px;
   box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.55);
@@ -420,6 +421,8 @@ footer {
     display: block;
     padding: 1em;
     width: 60%;
+    z-index: -1;
+}
   }
 
   section {
