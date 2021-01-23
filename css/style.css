@@ -17,7 +17,7 @@ nav > ul {
 nav > ul > li > a {
   padding: 0 15px;
   font-weight: 700;
-  color: #4a4a4a;
+  color: #ab3e5b;
 }
 
 nav > ul > li > a:visited {
@@ -209,7 +209,7 @@ a:active {
 
 #work .row {
   padding-bottom: 25px;
-  border-bottom: 1px solid #4a4a4a;
+  border-bottom: 0.25px solid #ef746f;
   margin: 25px 0;
 }
 
@@ -226,7 +226,9 @@ a:active {
 }
 
 .logo {
-  max-width: 200px;
+  max-width: 180px;
+  vertical-align: middle;
+  padding-top: 0.15em;
 }
 
 footer {
@@ -360,7 +362,7 @@ footer {
     white-space: nowrap;
     background: #ab3e5b;
     position: sticky;
-    top: 62px;
+    top: 55px;
   }
 
   .scrollbar ul {
@@ -373,6 +375,10 @@ footer {
 
   .scrollbar a {
     color: #fff;
+  }
+
+  .scrolllogo {
+    display: none;
   }
 
   section {
@@ -422,7 +428,6 @@ footer {
     padding: 1em;
     width: 60%;
     z-index: -1;
-}
   }
 
   section {
