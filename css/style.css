@@ -202,6 +202,11 @@ a:active {
   color: #fff;
 }
 
+.resumecenter {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
 /* Layout Styling */
 .container {
   padding: 0 15px;
