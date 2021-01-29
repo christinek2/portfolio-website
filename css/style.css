@@ -425,7 +425,7 @@ footer {
     grid-column: 1 / 3;
   }
 
-  #unfilteredyou main {
+  #projectpage main {
     display: grid;
     grid-template-columns: min-content 1fr;
   }
