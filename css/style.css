@@ -91,7 +91,7 @@ body {
 }
 
 main {
-  padding-top: 58px;
+  padding-top: 50px;
 }
 
 /* HEADINGS */
@@ -236,13 +236,12 @@ a:active {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300px;
 }
 
 .logo {
   max-width: 180px;
   vertical-align: middle;
-  padding-top: 0.23em;
+  padding: 0.23em 0;
 }
 
 footer {
@@ -275,7 +274,6 @@ footer {
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-    padding: 20px 0 13px;
   }
 
   nav {
@@ -321,7 +319,7 @@ footer {
   }
 
   main {
-    padding-top: 99px;
+    padding-top: 80px;
   }
 
   body {
@@ -388,7 +386,7 @@ footer {
     white-space: nowrap;
     background: #ab3e5b;
     position: sticky;
-    top: 55px;
+    top: 53px;
   }
 
   .scrollbar ul {
@@ -453,13 +451,13 @@ footer {
   .scrolllogo {
     display: block;
     padding: 1em;
-    width: 60%;
+    width: 50%;
     z-index: -1;
   }
 
   section {
-    padding-top: 6rem;
-    margin: -6rem 0 1rem;
+    padding-top: 5rem;
+    margin: -5rem 0 1rem;
   }
 
   footer {
