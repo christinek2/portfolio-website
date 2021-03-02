@@ -342,6 +342,7 @@ footer {
 
   .mystory {
     margin-top: 0;
+    padding-left: 10px;
   }
 
   [class*="col-"] {
